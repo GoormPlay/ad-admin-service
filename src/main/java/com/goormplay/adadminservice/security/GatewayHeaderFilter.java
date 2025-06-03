@@ -17,7 +17,7 @@ public class GatewayHeaderFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         log.info("request : 요청 들어옴");
         String fromGateway = request.getHeader("X-From-Gateway");
-        log.info("request fromGateway : "+ fromGateway);
+        log.info("request fromGateway : {}", fromGateway);
         if (!"true".equals(fromGateway)) {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Invalid Request");
         }

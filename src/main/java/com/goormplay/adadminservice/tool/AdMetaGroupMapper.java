@@ -2,7 +2,6 @@ package com.goormplay.adadminservice.tool;
 
 import com.goormplay.adadminservice.dto.AdMetaGroupDTO;
 import com.goormplay.adadminservice.entity.AdMetaGroup;
-import com.goormplay.adadminservice.entity.AdStatus;
 import com.goormplay.adadminservice.response.AdResponseDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
