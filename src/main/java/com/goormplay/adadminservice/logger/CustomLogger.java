@@ -3,11 +3,9 @@ package com.goormplay.adadminservice.logger;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 
 
-import java.time.LocalDateTime;
 @Component
 public class CustomLogger {
     private static final Logger logger = LoggerFactory.getLogger(CustomLogger.class);

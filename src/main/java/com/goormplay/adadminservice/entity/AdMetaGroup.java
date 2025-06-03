@@ -1,9 +1,5 @@
 package com.goormplay.adadminservice.entity;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.goormplay.adadminservice.tool.AdStatusDeserializer;
-import com.goormplay.adadminservice.tool.AdStatusSerializer;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

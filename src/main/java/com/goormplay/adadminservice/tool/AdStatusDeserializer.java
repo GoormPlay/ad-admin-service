@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class AdStatusDeserializer extends JsonDeserializer<AdStatus> {
     @Override
-    public AdStatus deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JacksonException {
+    public AdStatus deserialize(JsonParser p, DeserializationContext ctxt) throws IOException {
         int statusCode = p.getValueAsInt();
         return AdStatus.fromStatusCode(statusCode);
     }

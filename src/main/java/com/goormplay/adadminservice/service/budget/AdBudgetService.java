@@ -2,7 +2,6 @@ package com.goormplay.adadminservice.service.budget;
 
 import com.goormplay.adadminservice.dto.AdvertiserAccountDTO;
 import com.goormplay.adadminservice.dto.RechargeRequestDTO;
-import com.goormplay.adadminservice.entity.AdTransactionLog;
 import com.goormplay.adadminservice.entity.AdvertiserAccount;
 import com.goormplay.adadminservice.repository.AdTransactionLogRepository;
 import com.goormplay.adadminservice.repository.AdvertiserAccountRepository;
@@ -20,7 +19,6 @@ import java.time.LocalDateTime;
 @Transactional
 public class AdBudgetService {
     private final AdvertiserAccountRepository advertiserAccountRepository;
-    private final AdTransactionLogRepository  adTransactionLogRepository;
     private final AdvertiserAccountMapper accountMapper;
     public void deductCost(String advertiserId, String adSnId, String adInstanceId, String type, String userId, Long cost, String eventType) {
         AdvertiserAccount account = advertiserAccountRepository.findByAdvertiserId(advertiserId)

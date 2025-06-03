@@ -1,7 +1,6 @@
 package com.goormplay.adadminservice.dto;
 
 import lombok.*;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
