@@ -1,8 +1,4 @@
 spring:
-  data:
-    mongodb:
-      uri: ${MONGODB_URL:}
-      database: ad-db
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${DB_NAME:ad_admin_db}?allowPublicKeyRetrieval=true
