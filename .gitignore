@@ -41,3 +41,11 @@ out/
 # 컴파일 아웃풋
 out/
 target/
+
+# Secret 생성 스크립트 (로컬 전용)
+generate-secrets.sh
+
+# Secret YAML
+**/secret.yml
+**/sealed-secret.yml.bak
+tmp-*-secret.yml

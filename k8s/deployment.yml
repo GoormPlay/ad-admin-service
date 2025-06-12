@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ad-admin-service
+  namespace: ad-admin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ad-admin-service
+  template:
+    metadata:
+      labels:
+        app: ad-admin-service
+    spec:
+      containers:
+        - name: ad-admin-service
+          image: roin09/ad-admin-service:latest
+          ports:
+            - containerPort: 8089
+          envFrom:
+            - configMapRef:
+                name: ad-admin-service-config
+            - secretRef:
+                name: ad-admin-service-secret
