@@ -14,12 +14,6 @@ spring:
       idle-timeout: 30000      # 30초
       max-lifetime: 1800000    # 30분
       connection-timeout: 10000
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka} # Jenkins 환경변수 EUREKA_URL이 있으면 사용, 없으면 localhost
   jpa:
     hibernate:
       ddl-auto: update
