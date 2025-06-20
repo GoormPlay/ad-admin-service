@@ -2,6 +2,7 @@ apiVersion: v2
 name: ad-admin-service
 description: Helm chart for ad-admin-service
 version: 0.1.0
+type: application
 dependencies:
   - name: base-template
     version: 0.1.0
